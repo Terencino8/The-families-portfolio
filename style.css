@@ -1,0 +1,355 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.start_modal{
+    background-color:  rgb(0, 0, 0);
+    /* background-color:  rgba(0, 0, 0, 0.4); */
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 2;
+    overflow: auto;
+    top: 0;
+    max-height: 100%;
+    padding-top: 0%;
+}
+
+.modal_box{
+    display: flex;
+    flex-direction: column;
+    background-color: none;
+    max-width: 28rem;
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    color: white;
+    align-items: center;
+    border:2px solid rgba(128, 255, 0, 0.479);
+}
+
+.modal_box img{
+    width: 20rem;
+    height: 10rem;
+    border-radius: 20px;
+
+}
+
+.modal_box input{
+    border: none;
+    outline: none;
+    background: rgb(203, 253, 129);
+    height: 30px;
+    color: green;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    padding: 5px;
+    width: 20rem;
+
+}
+
+.modal_box button{
+    width: 5rem;
+    height: 2rem;
+    outline: none;
+    border: none;
+    background: greenyellow;
+    border-radius: 2px 5px 8px 10px;
+}
+
+.modal_box button:focus{
+    background: rgba(128, 255, 0, 0.479);
+    width: 6rem;
+    height: 2.5rem;
+    border-radius:  10px 2px 5px 8px ;
+
+}
+
+.invalid{
+    display: none;
+}
+
+.container {
+  display: none;
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  color: white;
+}
+
+
+.content {
+  display: flex;
+  width: 80%;
+  height: 85%;
+  background-color: black;
+  box-shadow: 0px 0px 2px 2px rgba(128, 255, 0, 0.479);
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* rgb(19, 19, 19) */
+
+.side_bar {
+    background-color:rgb(19, 19, 19);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 4%;
+    box-shadow: 0px 0px 2px 0px rgba(192, 192, 192, 0.479);
+    justify-content: space-between;
+    /* margin-right: 5px; */
+}
+
+.contact{
+    padding-top: 100px;
+}
+
+
+.contact div{
+    display: flex;
+    position: relative;
+    max-width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 10px;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+
+.exit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.exit button{
+    border: none;
+    outline: none;
+    width: 80%;
+    height: 1.3rem;
+    border-radius: 10px;
+}
+
+.exit button:hover{
+    width: 100%;
+    height: 1.8rem;
+}
+
+@media screen and (max-width:480px) {
+    body{
+        height: 100vh;
+    }
+    .content{
+        flex-direction: row;
+    }
+    
+    .side_bar{
+        display: none;
+        flex-direction: row;
+        height: 10%;
+    }
+    .contact{
+        padding-top: 2px;
+        display: flex;
+        
+    }
+    
+}
+.potfolio_image {
+    display: flex;
+    position: relative;
+  background-image: url(Teeit.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 36%;
+  height: 90vh;
+  margin: 0 auto;
+  flex-direction: column;
+  box-shadow: 0px 0px 2px 2px rgba(128, 255, 0, 0.479);
+    /* justify-content: space-between; */
+}
+
+.occupation{
+    color: rgba(81, 0, 211, 0.479);
+}
+
+.contact_links{
+    display: none;
+    flex-direction: column;
+    margin-top: 125px;
+    height: 33%;
+    background-color: black;
+    align-items: center;
+    padding: 5px;
+    max-width: 30vh;
+    width: 20vh;
+    justify-content: center;
+    transition: 2s;
+}
+
+.linkpics{
+    display: flex;
+    width: 20vh;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.linkDiv{
+    background-color: red;
+    display: flex;
+    height: 50%;
+    max-width: 25vh;
+    min-width: 20vh;
+    width: fit-content;
+    word-wrap: break-word;
+    padding: 3px;
+    align-items: center;
+    justify-content: center;
+}
+
+.name{
+    background-color: black;
+    display: flex;
+    position:absolute;
+    flex-direction: column;
+    width: 100%;
+    height: 15%;
+    box-shadow: 10px -60px 29px 30px black;
+    align-items: center;
+    bottom: 0;
+}
+.name p{
+    padding: 5px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.side_content{
+    background-color: rgb(19, 19, 19);
+    align-items: center;
+    /* border: 3px solid red; */
+    display: flex;
+    flex-direction: column;
+    width: 58%;
+    height: 100%;
+}
+.about{
+    background-color: rgb(19, 19, 19);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30vh;
+    /* overflow-y: scroll;
+    scrollbar-width: none; */
+}
+
+.about_header{
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.about_self{
+    display: flex;
+    width: 95%;
+    height: 20vh;
+    background-color: black;
+    margin: auto 0;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.skills_header{
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+    border-bottom:2px solid rgb(19, 19, 19) ;
+}
+
+.skills_container{
+    display: flex;
+    background-color: black;
+    width: 95%;
+    justify-content: space-between;
+    height: 45vh;
+}
+.skills_container h3{
+    margin-left: 5px;
+}
+
+.skill_con1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    padding: 10px;
+}
+
+
+.skill_con1 div{
+    
+    height: 20vh;
+    border: 1px solid rgb(19, 19, 19);
+    padding-top: 2px;
+}
+
+.skill_con1 div:hover{
+    background-color: rgb(19, 19, 19);
+    transition: 2s;
+}
+
+.skill_a{
+    height: 30vh;
+}
+.skill_b{
+    height: 30vh;
+}
+
+.skill_con2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    padding: 10px;
+}
+
+
+.skill_con2 div{
+    height: 20vh;
+    border: 1px solid rgb(19, 19, 19);
+    padding-top: 2px;
+}
+
+.skill_con2 div:hover{
+    background-color: rgb(19, 19, 19);
+    transition: 2s;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>The Family</title>
+</head>
+<body>
+    <!-- passowrd modal before the main page -->
+    <div class="start_modal" id="start_modal">
+      <div class="modal_box" id="modal_box">
+          <img src="family.jpg" alt="">
+        <span class="topQ" id="topQ" >Enter Your name</span>
+            <input type="text" placeholder="****"  id="password" autofocus>
+            <button id="button" onclick="validate()">Validate</button>
+          <span class="invalid" id="invalid">Oops You are Not Family</span>
+          
+      </div>
+    </div>
+    
+    <div class="container" id="container">
+       
+        <div class="content" id="content">
+
+            <div class="side_bar">
+                <div class="contact">
+                    <div class="whatsapp" id="whatsapp">
+                        <img src="whatsapp.jpeg" alt="whatsapp-logo"> 
+                   </div>
+                    <div class="phone" id="phone">
+                        <img src="contact.png" alt="phone number">
+                    </div>
+                    <div class="github" id="github">
+                        <img src="github.png" alt="github-logo">
+                    </div>
+                    <div class="figma" id="figma">
+                        <img src="figma.png" alt="figma-logo">
+                    </div>
+                    <div class="linkedIn" id="linkedIn">
+                        <img src="linkedin.png" alt="linked logo">
+                    </div>
+                    <div class="gmail" id="gmail">
+                        <img src="gmail.png" alt="gmail-logo">
+                    </div>
+                   
+                </div>
+
+
+                <div class="exit">
+                    <button  id="exitB" onclick="exitbtn()">exit</button>
+                </div>
+            </div>
+
+
+            <div class="potfolio_image" id="potfolio_image">
+                
+                <div class="contact_links" id="contact_links" ondblclick="contact_LinkFunc()">
+                    <div class="linkpics" id="linkpics">
+                        <img src="figma.png" alt="" id="contact_image">
+                    </div>
+                    <div class="linkDiv" id="linkDiv">
+                    <span id="links">Demo to start with</span>
+
+                    </div>
+                       
+                </div>
+                <div class="name" id="name">
+                    <p  id="pname">Onyekachi Terence</p>
+                    <p class="occupation" id="occupation">FrontEnd web Developer</p>
+                </div>
+                
+            </div>
+
+            <div class="side_content">
+                <div class="about">
+                    <div class="about_header">
+                        <h1>About Me</h1>
+                    </div>
+
+                    <div class="about_self">
+                        <p>Lorem ipsum dolor sit amet consectetur, 
+                            adipisicing elit. 
+                            Autem quaerat at odit assumenda, 
+                            itaque culpa vero laboriosam magnam sed magni,
+                            iusto excepturi, iste consequatur? Totam,
+                            mollitia quisquam! Officiis, id hic.</p>
+                    </div>      
+                </div>
+
+                <div class="skills_header">
+                    <h1>my skills</h1>
+                </div>
+
+                <div class="skills_container">
+                    <div class="skill_con1">
+                        <div class="skill_a">
+                            <h3>Front End Web Designer</h3>
+                        </div>
+                        <div class="skill_b">
+                            <h3>UI/UX Designer</h3>
+                        </div>
+                    </div>
+                    <div class="skill_con2">
+
+                        <div class="skill_c">
+                           <h3> Computer Engineer </h3>
+                        </div>
+                        <div class="skill_d">
+                            <h3>off_the_job_skills</h3>
+                        </div>
+
+                    </div>
+                </div>
+                 
+                
+            </div>
+            
+
+
+        </div>
+    </div>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
